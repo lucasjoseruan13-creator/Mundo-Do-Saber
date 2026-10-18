@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="iniciarDashboard()"></body>
+
+<h1>Bem-vindo</h1>
+
+<img src="img/image-patetas.png" width="150">
+
+<h2 id="nomeUsuario"></h2>
+
+<p>Pontos: <span id="pontos"></span></p>
+
+<img id="avatarAluno" width="120">
+
+<h3>Escolha seu avatar</h3>
+
+<img src="img/image-avatar-menina.png" width="60" onclick="escolherAvatar('image-avatar-menina.png')">
+<img src="img/image-avatar-menina2.png" width="60" onclick="escolherAvatar('image-avatar-menina2.png')">
+<img src="img/image-avatar-menino.png" width="60" onclick="escolherAvatar('image-avatar-menino.png')">
+<img src="img/image-avatar-menino2.png" width="60" onclick="escolherAvatar('image-avatar-menino2.png')">
+
+<h3>Escolha a série</h3>
+
+<button onclick="selecionarSerie('pre_escola')">Pré-escola</button>
+<button onclick="selecionarSerie('primeiro_ano')">1º Ano</button>
+<button onclick="selecionarSerie('segundo_ano')">2º Ano</button>
+<button onclick="selecionarSerie('terceiro_ano')">3º Ano</button>
+<button onclick="selecionarSerie('quarto_ano')">4º Ano</button>
+
+<h3>Ranking</h3>
+
+<ul id="ranking"></ul>
+
+<div id="mascote">
+
+<img src="img/image-urso.png" width="120">
+
+<p id="falaMascote"></p>
+
+</div>
+<h3>Progresso da série</h3>
+
+<div class="barraProgresso">
+<div id="progresso"></div>
+</div>
+<h3>Medalhas</h3>
+
+<div id="medalhas"></div>
+<br>
+
+<button onclick="sair()">Sair</button>
+<canvas id="grafico" width="300" height="200"></canvas>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="dadosAulas.js"></script>
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta charset="UTF-8">
+<title>Aula</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body onload="carregarAula()"></body>
+
+<button onclick="voltarDashboard()">⬅ Voltar</button>
+
+<h1 id="tituloAula"></h1>
+
+<img src="img/image-urso.png" width="120">
+
+<p id="descricao"></p>
+
+<h2 id="pergunta"></h2>
+
+<div id="opcoes"></div>
+<div id="estrelas"></div>
+
+<p id="resultado"></p>
+
+<p>Pontos: <span id="pontos"></span></p>
+
+<audio id="somAcerto" src="sons/Som de resposta certa.mp3"></audio>
+<audio id="somErro" src="sons/Som de resposta errada.mp3"></audio>
+
+<script src="dadosAulas.js"></script>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
